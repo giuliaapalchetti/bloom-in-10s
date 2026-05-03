@@ -1,0 +1,6 @@
+{
+  "name": "The Google Garden",
+  "description": "A musical sequencer and pattern-matching game. Bloom flowers to restore the sequence and wake the garden.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

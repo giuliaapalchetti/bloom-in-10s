@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-bg-dark: #1b261b;
+  --color-bg-light: #3a4d3a;
+  --color-bud: #5a7a5a;
+  --color-ghost: rgba(255, 255, 255, 0.1);
+  --color-google-blue: #4285F4;
+  --color-google-red: #EA4335;
+  --color-google-yellow: #FBBC05;
+  --color-google-green: #34A853;
+  --color-sage-accent: #a4cfae;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, var(--color-bg-light) 0%, var(--color-bg-dark) 100%);
+  color: white;
+  overflow: hidden;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-sparkle {
+  animation: sparkle 0.5s ease-out infinite;
+}
+
+/* Custom flower shapes that are hard with pure Tailwind */
+.petal-shape {
+  border-radius: 50% 50% 0 50%;
+}
+
+.bud-shape {
+  border-radius: 0 50% 50% 50%;
+}
